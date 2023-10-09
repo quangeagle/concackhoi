@@ -5,8 +5,1105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products Category</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <!--=============== FLATICON ===============-->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
 </head>
 <body>
-  
+  <!-- ======== HEADER ============ -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="/home.html" class="nav__logo">
+        <img src="/assets/img/logo/logo_store.png" alt="" class="nav__logo-img">
+      </a>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/home.html">TRANG CHỦ</a></li>
+          <li class="nav__item"><a href="/productsCategory.html">GIÀY</a></li>
+          <li class="nav__item"><a href="/detailProducts.html">CONVERSE</a></li>
+          <li class="nav__item"><a href="/detailProducts.html">VANS</a></li>
+          <li class="nav__item"><a href="/productsCategory.html">HOT SALE</a></li>
+          <li class="nav__item"><a href="#">BLOG</a>
+            <i class="fi fi-rs-angle-small-down"></i>
+            <ul class="blog__list">
+              <li class="blog__item"><a href="#">Thời trang</a></li>
+              <li class="blog__item"><a href="#">Lifestyle</a></li>
+              <li class="blog__item"><a href="#">Du lịch</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="header__user-actions">
+        <div class="header__action-search">
+          <i class="fi fi-rs-search"></i>        
+        </div>
+        <div class="header__action-heart">
+          <a href="#">         
+            <i class="fi fi-rs-heart"></i>
+          </a>
+          <span class="count">0</span>
+        </div>
+        <div class="header__action-cart">
+          <a href="cart.html">
+            <i class="fi fi-rs-shopping-cart"></i>          
+          </a>
+          <span class="cart__subtotal">
+            <span class="cart__subtotal-count">0</span>
+            <span class="cart__subtotal-divider">/</span>
+            <span class="cart__subtotal-totalAmount">
+              <span class="cart__subtotal-total">0₫</span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="custom__heading grid">
+      <div class="custom__heading-title">
+        <h2>HÀNG CÓ SẴN CHÍNH HÃNG</h2>
+      </div>
+      <div class="custom__heading-title">
+        <h2>ĐỔI TRẢ LINH HOẠT</h2>
+      </div>
+      <div class="custom__heading-title">
+        <h2>SHIP HÀNG TOÀN QUỐC</h2>
+      </div>
+  </div>
+  <div class="nav__products">
+    <!-- <a href="#">
+      <i class="fi fi-rs-arrow-turn-down-left"></i>
+    </a> -->
+    <ul>
+      <li><a href="/productsCategory.html">TẤT CẢ</a></li>
+      <li><a href="/detailProducts.html">GIÀY</a></li>
+      <li><a href="#">QUẦN ÁO</a></li>
+    </ul>
+  </div>
+  <!-- ========= MAIN =============== -->
+  <main id="mainProduct">
+    <!-- ====== SIDEBAR ====== -->
+    <section class="sidebar container flex">
+      <div class="sidebar__category">
+        <div class="sidebar__category-title">
+          DANH MỤC SẢN PHẨM
+        </div>
+
+        <div class="sidebar__product">
+          <ul>
+            <li><a href="/detailProducts.html">Converse</a></li>
+            <li><a href="/detailProducts.html">Giày</a></li>
+            <li><a href="/detailProducts.html">Sale hot</a></li>
+            <li><a href="/detailProducts.html">Vans</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar__shapeShoes">
+        <div class="sidebar__category-title">
+          DÁNG GIÀY
+        </div>
+        <span class="shapeShoes-high">
+          <span>Cao</span>
+          <span>(18)</span>
+        </span>
+
+        <span class="shapeShoes-low">
+          <span>Thấp</span>
+          <span>(13)</span>
+        </span>
+      </div>
+
+      <div class="sidebar__choiceColor">
+        <div class="sidebar__category-title">
+          CHỌN THEO MÀU
+        </div>
+        <ul>
+          <li class="choiceColor-flex flex">
+            <a href="#">
+              <span class="filter__swatch">
+                <span class="choiceColor__color" style="  background-color: #000;"></span>
+                 Đen
+              </span>
+            </a>
+
+            <span class="choiceColor__count">(25)</span>
+          </li>
+          
+          <li class="choiceColor-flex flex">
+            <a href="#">
+              <span class="filter__swatch">
+                <span class="choiceColor__color" style="background-color: #efe7dc;"></span>
+                 Trắng ngà
+              </span>
+            </a>
+
+            <span class="choiceColor__count">(5)</span>
+          </li>
+          
+          <li class="choiceColor-flex flex">
+            <a href="#">
+              <span class="filter__swatch">
+                <span class="choiceColor__color" style="background-color: #dbac1e;"></span>
+                 Vàng
+              </span>
+            </a>
+
+            <span class="choiceColor__count">(6)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar__filterValue">
+        <div class="sidebar__category-title">
+          LỌC THEO GIÁ
+        </div>
+
+        <div class="sidebar__category-range">
+          <input type="range" min="0" max="100">
+        </div>
+
+        <div class="sidebar__category-value">
+          <span>Giá</span>
+          <span>650.000₫ - 2.100.000₫</span>
+        </div>
+
+        <div class="sidebar__category-btn">
+          <button>Lọc</button>
+        </div>
+      </div>
+
+      <div class="sidebar__sales">
+        <div class="sidebar__category-title">
+          ĐANG SALE
+        </div>
+        <div class="sidebar__sales-list">
+          <div class="sidebar__sales-item">
+            <div class="sales__item-top">
+              <div class="sales__item-img">
+                <a href="/detailProducts.html">
+                  <img src="/assets/img/product/chunk_renew.png" alt="">
+                </a>
+              </div>
+
+              <div class="sales__info-product">
+                <div class="sales__title-product">
+                  RUN STAR HIKE LOW BLACK WHITE
+                </div>
+
+                <div class="sales__price-product">
+                  2.800.000₫
+                </div>
+              </div>
+            </div>
+
+            <div class="sales__item-bot">
+              <div class="sales__newPrice-product">
+                1.100.000₫
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar__sales-item">
+            <div class="sales__item-top">
+              <div class="sales__item-img">
+                <a href="/detailProducts.html">
+                  <img src="/assets/img/product/chunk_renew.png" alt="">
+                </a>
+              </div>
+
+              <div class="sales__info-product">
+                <div class="sales__title-product">
+                  RUN STAR HIKE LOW BLACK WHITE
+                </div>
+
+                <div class="sales__price-product">
+                  2.800.000₫
+                </div>
+              </div>
+            </div>
+
+            <div class="sales__item-bot">
+              <div class="sales__newPrice-product">
+                1.100.000₫
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar__sales-item">
+            <div class="sales__item-top">
+              <div class="sales__item-img">
+                <a href="/detailProducts.html">
+                  <img src="/assets/img/product/chunk_renew.png" alt="">
+                </a>
+              </div>
+
+              <div class="sales__info-product">
+                <div class="sales__title-product">
+                  RUN STAR HIKE LOW BLACK WHITE
+                </div>
+
+                <div class="sales__price-product">
+                  2.800.000₫
+                </div>
+              </div>
+            </div>
+
+            <div class="sales__item-bot">
+              <div class="sales__newPrice-product">
+                1.100.000₫
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar__sales-item">
+            <div class="sales__item-top">
+              <div class="sales__item-img">
+                <a href="/detailProducts.html">
+                  <img src="/assets/img/product/chunk_renew.png" alt="">
+                </a>
+              </div>
+
+              <div class="sales__info-product">
+                <div class="sales__title-product">
+                  RUN STAR HIKE LOW BLACK WHITE
+                </div>
+
+                <div class="sales__price-product">
+                  2.800.000₫
+                </div>
+              </div>
+            </div>
+
+            <div class="sales__item-bot">
+              <div class="sales__newPrice-product">
+                1.100.000₫
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar__sales-item">
+            <div class="sales__item-top">
+              <div class="sales__item-img">
+                <a href="/detailProducts.html">
+                  <img src="/assets/img/product/chunk_renew.png" alt="">
+                </a>
+              </div>
+
+              <div class="sales__info-product">
+                <div class="sales__title-product">
+                  RUN STAR HIKE LOW BLACK WHITE
+                </div>
+
+                <div class="sales__price-product">
+                  2.800.000₫
+                </div>
+              </div>
+            </div>
+
+            <div class="sales__item-bot">
+              <div class="sales__newPrice-product">
+                1.100.000₫
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- ==== PRODUCT CATEGORY====== -->
+     <section class="productCategory">
+      <div class="productCategory__result">
+        Hiện thị kết quả 1-16 của 37 kết quả
+        <span class="result__filter">
+          Bộ lọc 
+        </span>
+        <span><i class="fi fi-rs-plus-small"></i></span>
+      </div>
+      <div class="products__category container flex">
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="products__category container flex">
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="products__category container flex">
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="products__category container flex">
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__item category">
+          <div class="product__banner">
+            <a href="/detailProducts.html" class="product__images">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+            </a>
+
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Cho vào yêu thích">
+                <i class="fi fi-rs-heart"></i>
+              </a>
+              <a href="#" class="action__btn" aria-label="So sánh">
+                <i class="fi fi-rs-code-compare"></i>              </a>
+            </div>
+
+            <div class="product__badge">
+              -61%
+            </div>
+
+            <a href="/cart.html" class="product__cart-btn">
+              <span>
+                <i><i class="fi fi-rs-shopping-cart"></i></i>
+              </span>
+              <span>THÊM VÀO GIỎ </span>
+            </a>
+          </div>
+          <div class="product__content">
+            <div class="product__content-category">
+              <span class="product__category">Converse</span>, 
+              <span class="product__promotion">Giày</span>
+            </div>
+
+            <a href="/detailProducts.html" class="product__content-title">
+              <h3>Run star HIKE low black white</h3>
+            </a>
+
+            <div class="product__content-price">
+              <span class="product__oldPrice">2.800.000₫</span>
+              <span class="product__newPrice">1.100.000₫</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="addMore__product">
+        <a href="#">TẢI THÊM SẢN PHẨM</a>
+      </div>
+    </section>
+  </main>
+  <!-- ========= FOOTER =============== -->
+  <footer id="footer">
+    <div class="footer__top grid">
+      <div class="footer__top-menu container">
+        <ul>
+          <li><a href="#">MUA HÀNG</a></li>
+          <li><a href="#">ĐỔI TRẢ</a></li>
+          <li><a href="#">SHIP HÀNG</a></li>
+          <li><a href="#">THANH TOÁN</a></li>
+          <li><a href="#">SIZE GUIDE</a></li>
+          <li><a href="#">CÁCH CHECK CODE</a></li>
+        </ul>
+        <div class="footer__top-sm">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="/assets/img/SM/fb.png" alt="">
+                <span>FACEBOOK</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/assets/img/SM/instagram.png" alt="">
+                <span>INSTAGRAM</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/assets/img/SM/shopee.jpg" alt="">
+                <span>SHOPEE</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__top-product">
+        <ul>
+          <li><a href="#">GIÀY</a></li>
+          <li><a href="#">ÁO</a></li>
+          <li><a href="#">SALE</a></li>
+          <li><a href="#">NAM</a></li>
+          <li><a href="#">NỮ</a></li>
+          <li><a href="#">CONVERSE</a></li>
+          <li><a href="#">VANS</a></li>
+        </ul>
+      </div>
+      <div class="footer__top-address">
+        <div class="address__title">
+          CONVERSE.STORE_
+        </div>
+        <div class="address__converse">
+          <div>CỬA HÀNG:</div>
+          <div>
+            <span>
+              Số 8. Nguyễn Hoàng Tôn,
+            </span>
+            <span>
+              Xuân La, Tây Hồ, Hà Nội
+            </span>
+          </div>
+          <span class="address__number">
+            <a href="#">+84 866.866.368</a>
+          </span>
+        </div>
+        <div class="address__blog">
+          <a href="#">BLOG</a>
+        </div>
+      </div>
+      <div class="footer__top-form">
+        <div class="form__title">
+          NHẬN ƯU ĐÃI TỪ CỬA HÀNG
+        </div>
+
+        <div class="form__input">
+          <input type="email" placeholder="NHẬP MAIL BẠN">
+        </div>
+
+        <div class="form__btn">
+          <button>NHẬN NGAY</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bot">
+      Copyright 2023. Converse.Store_
+    </div>
+  </footer>
 </body>
 </html>

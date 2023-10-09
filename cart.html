@@ -5,8 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cart</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-</head>
+  <!--=============== FLATICON ===============-->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'></head>
 <body>
+  <!--========= HEADER ========-->
+  <header id="header">
+    <nav class="nav container">
+      <a href="/home.html" class="nav__logo">
+        <img src="/assets/img/logo/logo_store.png" alt="" class="nav__logo-img">
+      </a>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/home.html">TRANG CHỦ</a></li>
+          <li class="nav__item"><a href="/productsCategory.html">GIÀY</a></li>
+          <li class="nav__item"><a href="/detailProducts.html">CONVERSE</a></li>
+          <li class="nav__item"><a href="/detailProducts.html">VANS</a></li>
+          <li class="nav__item"><a href="/productsCategory.html">HOT SALE</a></li>
+          <li class="nav__item"><a href="#">BLOG</a>
+            <i class="fi fi-rs-angle-small-down"></i>
+            <ul class="blog__list">
+              <li class="blog__item"><a href="#">Thời trang</a></li>
+              <li class="blog__item"><a href="#">Lifestyle</a></li>
+              <li class="blog__item"><a href="#">Du lịch</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="header__user-actions">
+        <div class="header__action-search">
+          <i class="fi fi-rs-search"></i>        
+        </div>
+        <div class="header__action-heart">
+          <a href="#">         
+            <i class="fi fi-rs-heart"></i>
+          </a>
+          <span class="count">0</span>
+        </div>
+        <div class="header__action-cart">
+          <a href="cart.html">
+            <i class="fi fi-rs-shopping-cart"></i>          
+          </a>
+          <span class="cart__subtotal">
+            <span class="cart__subtotal-count">0</span>
+            <span class="cart__subtotal-divider">/</span>
+            <span class="cart__subtotal-totalAmount">
+              <span class="cart__subtotal-total">0₫</span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="mainCart">
+
+  </main>
+   <!--=========FOOTER========-->
+   <footer id="footer">
+    <div class="footer__top grid">
+      <div class="footer__top-menu container">
+        <ul>
+          <li><a href="#">MUA HÀNG</a></li>
+          <li><a href="#">ĐỔI TRẢ</a></li>
+          <li><a href="#">SHIP HÀNG</a></li>
+          <li><a href="#">THANH TOÁN</a></li>
+          <li><a href="#">SIZE GUIDE</a></li>
+          <li><a href="#">CÁCH CHECK CODE</a></li>
+        </ul>
+        <div class="footer__top-sm">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="/assets/img/SM/fb.png" alt="">
+                <span>FACEBOOK</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/assets/img/SM/instagram.png" alt="">
+                <span>INSTAGRAM</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/assets/img/SM/shopee.jpg" alt="">
+                <span>SHOPEE</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__top-product">
+        <ul>
+          <li><a href="#">GIÀY</a></li>
+          <li><a href="#">ÁO</a></li>
+          <li><a href="#">SALE</a></li>
+          <li><a href="#">NAM</a></li>
+          <li><a href="#">NỮ</a></li>
+          <li><a href="#">CONVERSE</a></li>
+          <li><a href="#">VANS</a></li>
+        </ul>
+      </div>
+      <div class="footer__top-address">
+        <div class="address__title">
+          CONVERSE.STORE_
+        </div>
+        <div class="address__converse">
+          <div>CỬA HÀNG:</div>
+          <div>
+            <span>
+              Số 8. Nguyễn Hoàng Tôn,
+            </span>
+            <span>
+              Xuân La, Tây Hồ, Hà Nội
+            </span>
+          </div>
+          <span class="address__number">
+            <a href="#">+84 866.866.368</a>
+          </span>
+        </div>
+        <div class="address__blog">
+          <a href="#">BLOG</a>
+        </div>
+      </div>
+      <div class="footer__top-form">
+        <div class="form__title">
+          NHẬN ƯU ĐÃI TỪ CỬA HÀNG
+        </div>
+
+        <div class="form__input">
+          <input type="email" placeholder="NHẬP MAIL BẠN">
+        </div>
+
+        <div class="form__btn">
+          <button>NHẬN NGAY</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bot">
+      Copyright 2023. Converse.Store_
+    </div>
+  </footer>
   <script src="/assets/js/javascript.js"></script>
 </body>
 </html>
