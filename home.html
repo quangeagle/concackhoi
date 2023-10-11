@@ -43,15 +43,15 @@
           </a>
           <span class="count">0</span>
         </div>
-        <div class="header__action-cart">
-          <a href="cart.html">
+        <div class="header__action-cart js-openCart">
+          <a href="#">
             <i class="fi fi-rs-shopping-cart"></i>          
           </a>
           <span class="cart__subtotal">
-            <span class="cart__subtotal-count">0</span>
+            <span class="cart__subtotal-count" id="total">0</span>
             <span class="cart__subtotal-divider">/</span>
             <span class="cart__subtotal-totalAmount">
-              <span class="cart__subtotal-total">0₫</span>
+              <span class="cart__subtotal-total" id="total">0₫</span>
             </span>
           </span>
         </div>
@@ -76,22 +76,31 @@
       <h3 class="main__title sectionTitle">BỘ SƯU TẬP</h3>
                 <!-- == SLIDER == -->
       <div class="album__slider">
+        <div class="slider img1 fade">
+          <a href="#">
+            <img src="/assets/img/slider/slider1.jpg">
+          </a>
+        </div>
+        <div class="slider img2 fade">
+          <a href="#">
+            <img src="/assets/img/slider/slider2.jpg">
+          </a>
+        </div>
         <div class="album__slider-promotion grid">
           <div class="album__promotion-sales">-70%</div>
           <div class="album__promotion-desc">
             SALES LÊN ĐẾN 70% CÁC MẪU VANS SIÊU HOT
           </div>
         </div>
-
-        <a href="/assets/img/slider/slider1.jpg" class="prev__slider">
+        <a href="#" class="prev__slider" onclick="plusSlides(-1)">
           <i class="fi fi-rs-angle-left"></i>
         </a>
-        <a href="/assets/img/slider/slider2.jpg" class="next__slider">
+        <a href="#" class="next__slider" onclick="plusSlides(1)">
           <i class="fi fi-rs-angle-right"></i>
         </a>
         <ul class="slider__number flex">
-          <li> <a href="/assets/img/slider/slider1.jpg">1</a></li>
-          <li> <a href="/assets/img/slider/slider2.jpg">2</a></li>
+          <li> <a href="#" class="dot" onclick="currentSlide(1)">1</a></li>
+          <li> <a href="#" class="dot" onclick="currentSlide(2)">2</a></li>
         </ul>
       </div>
 
@@ -154,13 +163,13 @@
     </section>
     <!-- ==== NEW PRODUCT ====== -->
     <section class="newProduct">
-      <h3 class="main__title sectionTitle ">HÀNG MỚI VỀ</h3>
+      <h3 class="main__title sectionTitle">HÀNG MỚI VỀ</h3>
 
       <div class="newProduct__products container grid">
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img default">
               <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
             </a>
 
@@ -190,12 +199,12 @@
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Run star HIKE low black white</h3>
             </a>
 
             <div class="product__content-price">
               <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span id="price__product" class="product__newPrice">1.100.000₫</span>
             </div>
           </div>
         </div>
@@ -204,7 +213,7 @@
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
               <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -216,7 +225,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -50%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -229,16 +238,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Sale hot</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Converse Renew Canvas</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">3.200.000₫</span>
+              <span id="price__product" class="product__newPrice">1.600.000₫</span>
             </div>
           </div>
         </div>
@@ -246,8 +255,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/move_platform.png" alt="" class="product-img default">
+              <img src="/assets/img/product/move_platform.png" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -255,11 +264,12 @@
                 <i class="fi fi-rs-heart"></i>
               </a>
               <a href="#" class="action__btn" aria-label="So sánh">
-                <i class="fi fi-rs-code-compare"></i>              </a>
+                <i class="fi fi-rs-code-compare"></i>             
+               </a>
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -272,16 +282,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Sale hot</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Converse Run Star Move</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">3.200.000₫</span>
+              <span id="price__product" class="product__newPrice">1.900.000₫</span>
             </div>
           </div>
         </div>
@@ -289,8 +299,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/run_star_hike_default_1.png" alt="" class="product-img default">
+              <img src="/assets/img/product/run_star_hike_hover_2.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -298,11 +308,12 @@
                 <i class="fi fi-rs-heart"></i>
               </a>
               <a href="#" class="action__btn" aria-label="So sánh">
-                <i class="fi fi-rs-code-compare"></i>              </a>
+                <i class="fi fi-rs-code-compare"></i>              
+              </a>
             </div>
 
             <div class="product__badge">
-              -61%
+              -63%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -319,12 +330,12 @@
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Run star HIKE low black white</h3>
             </a>
 
             <div class="product__content-price">
               <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span id="price__product" class="product__newPrice">1.100.000₫</span>
             </div>
           </div>
         </div>
@@ -332,8 +343,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/hike_low_default_1.png" alt="" class="product-img default">
+              <img src="/assets/img/product/hike_low_hover_1.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -345,7 +356,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -63%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -358,16 +369,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Sale hot</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Converse Run Star Hike</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">3.200.000₫</span>
+              <span id="price__product" class="product__newPrice">1.200.000₫</span>
             </div>
           </div>
         </div>
@@ -375,8 +386,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/vans_default_3.jpg" alt="" class="product-img default">
+              <img src="/assets/img/product/vans_hover_3.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -388,7 +399,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -401,16 +412,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Vans</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Vans Slip on checker</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">1.600.000₫</span>
+              <span id="price__product" class="product__newPrice">950.000₫</span>
             </div>
           </div>
         </div>
@@ -420,8 +431,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/vans_default_4.jpg" alt="" class="product-img default">
+              <img src="/assets/img/product/vans_hover_4.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -433,7 +444,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -450,12 +461,12 @@
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Vans Old skool camel</h3>
             </a>
 
             <div class="product__content-price">
               <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span id="price__product" class="product__newPrice">950.000₫</span>
             </div>
           </div>
         </div>
@@ -463,8 +474,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/vans_default_5.jpg" alt="" class="product-img default">
+              <img src="/assets/img/product/vans_hover_5.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -476,7 +487,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -489,16 +500,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Vans</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Vans Authen DX BW</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">1.600.000₫</span>
+              <span id="price__product" class="product__newPrice">950.000₫</span>
             </div>
           </div>
         </div>
@@ -506,8 +517,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/vans_default_6.jpg" alt="" class="product-img default">
+              <img src="/assets/img/product/vans_hover_6.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -519,7 +530,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -532,16 +543,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Vans</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Vans Authen DX Cream</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">1.600.000₫</span>
+              <span id="price__product" class="product__newPrice">950.000₫</span>
             </div>
           </div>
         </div>
@@ -549,8 +560,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/vans_default_7.jpg" alt="" class="product-img default">
+              <img src="/assets/img/product/vans_hover_7.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -562,7 +573,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -575,16 +586,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Vans</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Vans SK8-Hi BW</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <!-- <span class="product__oldPrice">2.800.000₫</span> -->
+              <span id="price__product" class="product__newPrice">1.100.000₫</span>
             </div>
           </div>
         </div>
@@ -592,8 +603,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/vans_default_8.jpg" alt="" class="product-img default">
+              <img src="/assets/img/product/vans_default_8.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -605,7 +616,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -618,16 +629,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Vans</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Vans Old Skool Black White</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">1.600.000₫</span>
+              <span id="price__product" class="product__newPrice">950.000₫</span>
             </div>
           </div>
         </div>
@@ -635,8 +646,8 @@
         <div class="product__item">
           <div class="product__banner">
             <a href="/detailProducts.html" class="product__images">
-              <img src="/assets/img/product/chunk_renew.png" alt="" class="product-img default">
-              <img src="/assets/img/product/hike_low.jpg" alt="" class="product-img hover">
+              <img src="/assets/img/product/vans_default_9.jpg" alt="" class="product-img default">
+              <img src="/assets/img/product/vans_hover_9.jpg" alt="" class="product-img hover">
             </a>
 
             <div class="product__actions">
@@ -648,7 +659,7 @@
             </div>
 
             <div class="product__badge">
-              -61%
+              -41%
             </div>
 
             <a href="/cart.html" class="product__cart-btn">
@@ -661,16 +672,16 @@
           <div class="product__content">
             <div class="product__content-category">
               <span class="product__category">Converse</span>, 
-              <span class="product__promotion">Giày</span>
+              <span class="product__promotion">Vans</span>
             </div>
 
             <a href="/detailProducts.html" class="product__content-title">
-              <h3>Run star HIKE low black white</h3>
+              <h3 id="name__product">Vans Old Skool Checker</h3>
             </a>
 
             <div class="product__content-price">
-              <span class="product__oldPrice">2.800.000₫</span>
-              <span class="product__newPrice">1.100.000₫</span>
+              <span class="product__oldPrice">1.600.000₫</span>
+              <span id="price__product" class="product__newPrice">950.000₫</span>
             </div>
           </div>
         </div>
@@ -1001,5 +1012,34 @@
       Copyright 2023. Converse.Store_
     </div>
   </footer>
+  <div class="modal__cart">
+    <div class="modal__cart-container">
+      <div class="cart__header">
+        <div class="cart__header-title">
+          GIỎ HÀNG
+        </div>
+
+        <div class="cart__header-close">
+          <span>ĐÓNG</span>
+          <span>
+            <i class="fi fi-rs-minus-small"></i>
+            <i class="fi fi-rs-cross-small"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="cart__body">
+        <div class="cart__body-notification">
+          <span>
+            <i class="fi fi-rs-cart-minus"></i>
+          </span>
+          <span>
+            Chưa có sản phẩm trong giỏ hàng
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/javascript.js"></script>
 </body>
 </html>

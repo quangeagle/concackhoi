@@ -204,14 +204,34 @@ body {
     font-size: 36px;
     font-weight: 500;
   }
-
-  .album__slider {
-    padding-top: 35%;
-    background: url(/assets/img/slider/slider1.jpg) top center/cover no-repeat;
+  .slider {
     max-width: 1550px;
+    height: 552px;
     position: relative;
   }
 
+  .slider .img1,
+  .slider .img2 {
+    width: 100%;
+  }
+  .dot {
+    display: block;
+  }
+  .active,li .dot:hover {
+    border-radius: 50%;
+    background-color: #717171;
+  }
+  .fade {
+    animation: Fade 2s ease;
+  }
+  @keyframes Fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .album__slider-promotion {
     position: absolute;
     bottom: 100px;
@@ -249,8 +269,7 @@ body {
     height: 70px;
     border-radius: 50%;
     background-color: whitesmoke;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 60%;
   }
 
   .prev__slider,
@@ -1068,6 +1087,8 @@ body {
 
 /* =========== CART ============== */
 .modal__cart {
+  align-items: center;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
@@ -1075,43 +1096,30 @@ body {
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 11;
-  display: none;
   transition: all 1s ease;
+  display: none;
 }
 
-.active-cover {
-  display: block;
+.modal__cart.active-cover {
+  display: flex;
 }
 
 .modal__cart-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 12;
   color: white;
   width: 340px;
-  height: 850px;
+  height: 730px;
   background-color: #fff;
   animation: modalFadeIn ease 1s;
 }
 @keyframes modalFadeIn {
   from {
-    right: -100%;
+    transform: translateX(300px);
   }
   to {
-    right: 0;
+    transform: translateX(0);
   }
 }
 
-@keyframes modalFadeOut {
-  from {
-    right: 0;
-  }
-  to {
-    right: -100%;
-  }
-}
 
 .cart__header {
   display: flex;

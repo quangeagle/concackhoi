@@ -44,7 +44,7 @@
     }
   </style>
 </head>
-<body>
+<body onload="cartLoadPage()">
   <!--========= HEADER ========-->
   <header id="header">
     <nav class="nav container">
@@ -118,12 +118,28 @@
         </tr>
       </thead>
       <tbody id='products-cart'>
-        <tr>
-          <td class="product__remove"></td>
-          <td class="product__thumbnail"><td>
-          <td class="product__Item"></td>
-          <td class="product__price"></td>
-          <td class="product__count"></td>
+        <tr class="displayProd">
+          <td class="product__remove">
+            <i class="fi fi-rs-minus-circle"></i>          
+          <td class="product__thumbnail">
+            <img src="/assets/img/product/hike_low.jpg" alt="">
+          </td>
+          <td class="product__Item">
+            Run star HIKE low black white
+          </td>
+          <td class="product__price">
+            1,100,000₫
+          </td>
+          <td class="product__count">
+            <div class="calculate">
+              <div class="calPlus">
+                +
+              </div>
+              <div class="calMinus">
+                -
+              </div>
+            </div>
+          </td>
           <td class="product__tempPrice"></td>
         </tr>
       </tbody>
