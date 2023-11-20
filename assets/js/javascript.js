@@ -44,45 +44,26 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-//Detail Product
-function showInfo(menuNumber) {
+//chuyển nút đăng kí đăng nhập
+function toggleButton() {
+  var registerBtn = document.getElementById('registerBtn');
+  var loginBtn = document.getElementById('loginBtn');
 
-  for (let i = 1; i <= 4; i++) {
-      document.getElementById('info' + i).style.display = 'none';
+  if (registerBtn.style.display !== 'none') {
+    registerBtn.style.display = 'none';
+    loginBtn.style.display = 'block';
+  } else {
+    registerBtn.style.display = 'block';
+    loginBtn.style.display = 'none';
   }
-  document.getElementById('info' + menuNumber).style.display = 'block';
-
- 
 }
-// slide show sản phẩm
-var currentIndex = 0;
-var slideWidth = 300; 
-var numSlides = document.querySelectorAll('.news-item').length;
 
-var prevButton = document.getElementById('prevButton');
-var nextButton = document.getElementById('nextButton');
-var sliderContent = document.querySelector('.other-product2');
 
-prevButton.addEventListener('click', function() {
-  currentIndex--;
-  if (currentIndex < 0) {
-      currentIndex = numSlides - 1;
-  }
-  updateSlider();
-});
 
-nextButton.addEventListener('click', function() {
-  currentIndex++;
-  if (currentIndex >= numSlides) {
-      currentIndex = 0;
-  }
-  updateSlider();
-});
 
-function updateSlider() {
-  var offsetX = -currentIndex * slideWidth;
-  sliderContent.style.transform = 'translateX(' + offsetX + 'px)';
-}
+
+
+
 //Cart
 
 // const products = [

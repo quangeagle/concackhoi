@@ -28,8 +28,8 @@ img {
 
 button,textarea, input {
   background-color: transparent;
-  border: none;
-  outline: none;
+  /* border: none; */
+  /* outline: none; */
 }
 
 #mainProduct {
@@ -767,7 +767,7 @@ body {
 
   .footer__top {
     height: 85%;
-    padding: 50px 25px;
+    padding: 40px 25px;
   }
 
   .footer__bot {
@@ -1275,6 +1275,7 @@ body {
   display: block;
   text-align: center;
 }
+
 
 
 

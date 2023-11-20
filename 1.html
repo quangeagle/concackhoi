@@ -6,53 +6,12 @@
   <title>Detail Product</title>
   <link rel="stylesheet" href="/assets/css/detailPro.css">
   <link rel="stylesheet" href="/assets/css/style.css">
-
   <!--=============== FLATICON ===============-->
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
-  <style>
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content:space-evenly;
-    
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .swiper-button-next,.swiper-button-prev{
-      color:red;
-      opacity:0;
-    }
-    .mySwiper:hover  .swiper-button-prev,
-    .mySwiper:hover  .swiper-button-next {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out; /* Hiệu ứng hiển thị mượt mà */
-}
-
-
-
-  </style>
   <!--=========HEADER========-->
   <!-- Nav by quangeagle -->
   <header id="header">
@@ -124,56 +83,42 @@
    </div>
 </div>
 
-  <!-- Product by quangeagle -->
+  <!-- Product by quangeagle and Tung -->
   <main id="home">
    
     <div class="product">
       <div class="product-price">
-        <div class="1">
-          <div class="img-mini-container">
-            <div class="img-mini">
-             <!-- 1 -->
-             <div class="item-mini">
-               <a href="javascript:void(0);" onclick="show(1)">
-                 <img src="assets/img/z4695858391690_3ce0d0da7433b0d9591666ca42d27140-1-600x600.jpg">
-               </a>
-             </div>
-             <!-- 2 -->
-             <div class="item-mini">
-               <a href="javascript:void(0);" onclick="show(2)">
-                 <img src="assets/img/z4695858391690_3ce0d0da7433b0d9591666ca42d27140-1-600x600.jpg">
-               </a>
-             </div>
-             <!-- 3 -->
-             <div class="item-mini">
-               <a href="javascript:void(0);" onclick="show(3)">
-                 <img src="assets/img/z4695784859484_4e2f62a5bbb0001ebf36406a0f04d2ee-600x800.jpg">
-               </a>
-             </div>
-             <!-- 4 -->
-             <div class="item-mini">
-               <a href="javascript:void(0);" onclick="show(3)">
-                 <img src="assets/img/z4695784859484_4e2f62a5bbb0001ebf36406a0f04d2ee-600x800.jpg">
-               </a>
-             </div>
-             <!-- 5 -->
-             <div class="item-mini">
-               <a href="javascript:void(0);" onclick="show(3)">
-                 <img src="assets/img/z4695784859484_4e2f62a5bbb0001ebf36406a0f04d2ee-600x800.jpg">
-               </a>
-             </div>
-            </div>
-            <!-- end item-mini -->
-
-           </div>
-           <div class="updown"> 
-            <button id="downButton"><i class="fa-solid fa-caret-down"></i></button> 
-            <button id="upButton"><i class="fa-solid fa-caret-up"></i></button>
-           </div>
-           
-           
+        <div>
+       <div class="img-mini">
+        <div class="item-mini">
+          <a href="javascript:void(0);" onclick="show(1)">
+            <img src="assets/img/z4695858391690_3ce0d0da7433b0d9591666ca42d27140-1-600x600.jpg">
+          </a>
         </div>
-  
+        <div class="item-mini">
+          <a href="javascript:void(0);" onclick="show(2)">
+            <img src="assets/img/z4695858391690_3ce0d0da7433b0d9591666ca42d27140-1-600x600.jpg">
+          </a>
+        </div>
+        <div class="item-mini">
+          <a href="javascript:void(0);" onclick="show(3)">
+            <img src="assets/img/z4695784859484_4e2f62a5bbb0001ebf36406a0f04d2ee-600x800.jpg">
+          </a>
+        </div>
+        <div class="item-mini">
+          <a href="javascript:void(0);" onclick="show(3)">
+            <img src="assets/img/z4695784859484_4e2f62a5bbb0001ebf36406a0f04d2ee-600x800.jpg">
+          </a>
+        </div>
+        <div class="item-mini">
+          <a href="javascript:void(0);" onclick="show(3)">
+            <img src="assets/img/z4695784859484_4e2f62a5bbb0001ebf36406a0f04d2ee-600x800.jpg">
+          </a>
+        </div>
+       </div>
+       <button id="downButton"><i class="fa-solid fa-caret-down"></i></button>
+       <button id="upButton"><i class="fa-solid fa-caret-up"></i></button>
+      </div>
        <div class="img-detail">
         <div id="anh1" style="display:none">
           <img src="assets/img/z4695858391690_3ce0d0da7433b0d9591666ca42d27140-1-600x600.jpg">
@@ -211,29 +156,12 @@
                 </select>
             </form>
         </div>
-        
-            <!-- Phát guiử copy pass -->
-            <div class="tinhtien-soluong">
-              <div class="soluong-giohang">
-                <div class="soluong">
-                    <button class="minus-btn" onclick="handleMinus()"
-                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
-                    </svg>
-                    </button>
-                    <input type="text" name="amount" id="amount" value="1">
-                    <button class="plus-btn" onclick="handlePlus()"
-                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
-                    </svg>                                  
-                    </button>
-                </div>
-                <div class="mua-ngay">
-                    <button>Thêm vaò giỏ</button>
-                </div>
-            </div> 
-            </div>
-        
+        <div class="soluong">
+            <span class="minus">-</span>
+            <input type="text" value="1"/>
+            <span class="plus">+</span>
+           <a href="#"><button>Thêm Vào Giỏ</button></a> 
+        </div>
         <div class="detail">
             <div>
                 <a><i class="fa-regular fa-heart"></i>
@@ -426,11 +354,9 @@
         
         <div class="slider-contener"> 
            <div class="other-product2">
-          
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <!-- 1 -->
-                <div class="swiper-slide">
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    loop="true">
+            <swiper-slide>
                 <div class="item-new">
                     <div class="news-item">
                       <div class="item_tag">
@@ -485,7 +411,7 @@
                   </div>
                   <div class="price">
                       <span class="old-price">
-                      1,700,000đ  
+                      1,700,000đ
                       </span>
                       <span class="new-price">
                        950,000₫
@@ -557,10 +483,10 @@
                   </div>
               </div>    
               </div>
-            </div>
+            </swiper-slide>
               
            <!--  -->
-           <div class="swiper-slide">
+           <swiper-slide> 
             <div class="item-new">
             <div class="news-item">
               <div class="item_tag">
@@ -696,18 +622,13 @@
                   </div>
               </div> 
               </div>
-            </div>
-       
-
+            </swiper-slide>
+      </swiper-container>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
   </div>
         </div>    
      <!-- Hết Phần other -->
      
-    </div>
     </div>
   </main>
   <!--=========FOOTER========-->
@@ -799,22 +720,6 @@
   
 
   <script src="assets/js/product-detail.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>

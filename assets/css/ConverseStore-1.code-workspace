@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../test"
+		},
+		{
+			"path": "../../../../thiendao"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ConverseStore-1"
+	}
+}
